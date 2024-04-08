@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: auto;
 }
 
@@ -27,6 +27,7 @@ ul {
     display: flex;
     gap: 30px;
     justify-content: center;
+    list-style: none;
 }
 
 .inner-header{
@@ -36,4 +37,45 @@ ul {
     align-items: center;
 
 }
+
+.sub-menu-items{
+    display:none;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: -200px;
+    background-color: palevioletred;
+
+}
+
+.menu-item{
+    position: relative;
+}
+
+.menu-item:hover{
+    cursor: pointer;
+    color: aqua;
+}
+
+.menu-item:hover .sub-menu-items{
+    display: flex;
+
+}
+
+.item{
+    display: none;
+}
+
+.sub-menu-items:hover .item{
+    display: flex;
+    background-color: brown;
+    flex-direction: column;
+}
+
+ol{
+    list-style: none;
+}
+
+
+
 
