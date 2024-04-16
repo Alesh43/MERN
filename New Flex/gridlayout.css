@@ -1,0 +1,65 @@
+.main{
+    display: grid;
+    height: 600px;
+    grid-template-columns: auto auto;
+}
+.left{
+    padding: 20px;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+.left div{
+    background-color: aquamarine;
+}
+.right{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.right-middle{
+    padding: 10px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto ;
+    gap: 10px;
+}
+.right-child1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.right-child3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.right-child7{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.right-child10{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.right-child11{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.right-middle div{
+    background-color: darkorange;
+}
+.right-last{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.right-top{
+    background-color: aquamarine;
+}
+.right-buttom{
+    background-color: red;
+}
