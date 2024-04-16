@@ -1,0 +1,68 @@
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box{
+    height: 400px;
+    width: 600px;
+    background-color: purple;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-name: animation1,animation2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    animation-play-state: paused;
+}
+
+@keyfrmaesanimation1{
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color:purple;
+        transform: translate(200px,300px);
+    }
+}
+
+@keyframes animation2{
+    0%{
+        background: repeating-radial-gradient(circle, blue 10%, purple 50%, yellow 20%);
+    }
+
+    10%{
+        border-radius: 50%;
+        background-color: blueviolet;
+        border-color: 2px solid palevioletred;
+        transform: translate(200px);
+    }
+
+    20%{
+        transform: rotate(360deg);
+        background-color: blueviolet;
+        transform: translate(200px, 200px);
+    }
+
+    50%{
+        transform: scale(6);
+        
+
+    }
+
+    80%{
+        transform: rotate(60deg);
+        background-color: brown;
+        color: yellowgreen;
+    }
+    100%{
+        transform:scale(3) ;
+    }
+
+}
+
