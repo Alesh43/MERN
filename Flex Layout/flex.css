@@ -18,6 +18,7 @@ header{
     align-items: center;
     justify-content: space-between;
     color: aliceblue;
+    gap:20px;
 }
 
 .Sign-In{
@@ -84,4 +85,13 @@ header{
     height: 50%;
     align-items: center;
     justify-content: center;
+}
+
+.item{
+    position: relative;
+}
+
+.sub-menu-items{
+    position: absolute;
+    display: none;
 }
