@@ -21,7 +21,7 @@
     animation-play-state: paused;
 }
 
-@keyfrmaesanimation1{
+@keyframes animation1{
     from{
         background-color: blue;
     }
